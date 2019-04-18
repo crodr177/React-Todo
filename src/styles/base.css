@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+html {
+  box-sizing:border-box;
+}
+
+*, *::before, *::after {
+  box-sizing:inherit;
+}
+
+body {
+  background-color: rgb(242,242,242);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#main-container {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 200px;
+  font-weight: lighter;
+  color: rgb(252, 110, 110);
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+#span-title {
+  color: rgb(99, 98, 98);
+  font-size: 75px;
+}
+
+input {
+  margin:0;
+  padding: 10px;
+  width: 900px;
+  height: 80px;
+  font-size: 35px;
+  outline: 0;
+  font-weight: 300;
+}
+
+::placeholder {
+  font-style: italic;
+  color: rgb(207, 205, 205);
+  font-weight: lighter;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+}
+
+li {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  height: 60px;
+  border: 1px solid rgb(209, 208, 208);
+  padding: 10px;
+  font-size: 35px;
+  background: white;
+  position: relative;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.delete-container {
+  width: 20%;
+  color: white;
+}
+
+.delete {
+  cursor: pointer;
+  margin-left: 80%;
+}
+
+.delete-container:hover {
+  color:rgb(250, 117, 117);
+}
+
+.checked {
+  margin-right: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.checked:hover {
+  color: green;
+}
+
+#bottom-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 900px;
+  height: 60px;
+  background: white;
+  border: 1px solid rgb(209, 208, 208);
+  padding: 20px;
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  font-size: 20px;
+  outline: 0;
+}
+
+button:focus {
+  border: 1px solid rgb(253, 194, 194);
+  border-radius: 3px;
+}
+
+button:hover {
+  border: 1px solid rgb(209, 208, 208);
+}
